@@ -17,4 +17,4 @@ addons:
 install:
   - if [ "$CXX" = 'g++' ]; then export CXX='g++-6'; fi
   - if [ "$CXX" = 'clang++' ]; then export CXX='clang++-3.8'; fi
-script: mkdir build && cd build && cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" && make && other/MsdnCpuId/MsdnCpuId.exe
+script: mkdir build && cd build && cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" && make && others/MsdnCpuId/MsdnCpuId
